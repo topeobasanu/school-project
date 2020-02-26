@@ -1,0 +1,161 @@
+*{margin:0;
+padding:0;
+}
+
+body{
+    background-color: darkgoldenrod;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height:1.6em;
+    margin:0;
+}
+#main-header{
+    background-color: coral;
+    color:white;
+    text-align: center;
+    font: comic;
+    font-style: oblique;
+    font-size: 22;
+   
+}
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    background-color:azure;   
+}
+li{
+    display:inline;
+}
+li a{display: inline-block;
+color:#000;
+padding:8px 0px 8px 16px;
+text-decoration: none;
+} 
+li a.active{background-color:green;
+color: white;
+}
+li
+a:hover:not(.active)
+{background-color: #555555;
+color: white;
+}   
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+}
+li a:hover,
+.dropdown:hover
+.dropbtn{
+    background-color:red;
+}
+li.dropdown{
+    display:inline-block;
+}
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color:#f9f9f9;
+    min-width:160px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color:black;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color:#f1f1f1
+}
+.dropdown:hover.dropdown-content
+{display:block;
+}
+
+.values {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color:white;
+    width: 30%;
+    float: left;
+}
+#sidebar{
+    float:right;
+    margin:30px 0px 30px 60px;
+    width: 10%;
+    background-color: black;
+    color: white;
+}
+#footer{
+    background-color: black;
+    color:white;
+    margin-top: 70px;
+}
+.pseudo p::before{
+    content:"hello";
+    display:block;
+    font-weight:bold;
+    font-size: 3rem;
+    color:red;
+}
+.pseudo p::after{
+    content:"08170080896 www.lifespringsschools.com";
+    display: block;
+    width:15rem;
+    height: 5rem;
+    background:greenyellow;
+}
+/*.img::before{
+    content:"";
+    border:2px solid aqua;
+    width: 100%;
+    height:100%;
+    box-sizing:border-box;
+    top:-40px;
+    left:-40px;
+    z-index: -1;
+}*/
+/*css for the contact page*/
+img{
+    width:40vw;
+    margin: 100px auto;
+    border: 3px solid red;
+}
+.img{
+    width: 100%;
+    display: block;
+}
+img::before {
+    content:'';
+    border:2px solid brown;
+    width:100%;
+    height:100%;
+    position: absolute;
+    box-sizing:border-box;
+    top:-40px;
+    left:-40px;
+    z-index: -2
+
+}
+img::after {
+    content:'';
+    border:2px solid brown;
+    width:100%;
+    height:100%;
+    position: absolute;
+    box-sizing:border-box;
+    top:-20px;
+    left:-20px;
+    z-index: -1
+
+}
